@@ -1393,6 +1393,9 @@
     var i, len;
     var resultEvents = orderEvents(sortedEvents);
 
+    var trout = resultEvents.map(function (e) { return e.point.x + ' ' + e.point.y; });
+    console.writeline(trout.join(','));
+
     // "false"-filled array
     var processed = {};
     var result = [];

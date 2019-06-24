@@ -95,6 +95,9 @@ export default function connectEdges(sortedEvents, operation) {
   let i, len;
   const resultEvents = orderEvents(sortedEvents);
 
+  const trout = resultEvents.map(e => e.point.x + ' ' + e.point.y);
+  console.writeline(trout.join(','));
+
   // "false"-filled array
   const processed = {};
   const result = [];
